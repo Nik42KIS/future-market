@@ -1,3 +1,51 @@
 .header {
     max-width: 1320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    height: 40px;
+    align-items: center;
+}
+
+.logo {
+
+    padding: 5px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-weight: 600;
+}
+
+.nav {
+    max-width: 608px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 0.875rem;
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+
+        .list_item {
+            list-style-type: none;
+        }
+    }
+}
+
+
+
+
+.call {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .call_image {
+        height: 40px;
+    }
+
+    .call_number {
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
 }
