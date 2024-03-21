@@ -1,0 +1,79 @@
+.btn {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+    height: 70px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    .btn_name {
+        padding: 15px 10px;
+        width: 310;
+        text-wrap: nowrap;
+    }
+
+    .vector {
+
+        height: 70px;
+        width: 70px;
+        position: relative;
+
+        img {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+    }
+}
+
+.reg_btn {
+    background-color: white;
+    color: rgba(7, 48, 93, 1);
+    border: 1px solid white;
+
+    .vector {
+        border-left: 1px solid rgba(7, 48, 93, 1);
+
+    }
+}
+
+.free_btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+
+    .vector {
+        border-left: 1px solid white;
+
+    }
+}
+
+
+@media screen and (max-width: 1340px) {
+    .btn {
+        width: 320px;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 1145px) {
+    .btn {
+
+        height: 60px;
+
+        .btn_name {
+            padding: 10px 5px;
+            width: 310;
+            text-wrap: nowrap;
+        }
+        .vector {
+
+            height: 60px;
+            width: 60px;
+
+    
+        }
+    }
+
+}

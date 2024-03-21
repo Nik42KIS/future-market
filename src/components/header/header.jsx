@@ -1,13 +1,13 @@
 import React from 'react';
 import style from './header.module.scss';
 import PHONE_ICON from '../../assets/icons/phone_icon.png';
+import { Logo } from '../logo/logo';
+import MENU_ICON from '../../assets/icons/menu.png';
 
 export const Header = () => {
   return (
     <header className={style.header}>
-      <a href="#" className={style.logo}>
-        ALEX. SHEVTSOV
-      </a>
+      <Logo />
       <nav className={style.nav}>
         <ul className={style.list}>
           <li className={style.list_item}>
@@ -43,6 +43,7 @@ export const Header = () => {
         </ul>
       </nav>
       <a href="#" className={style.call}>
+        <img className={style.menu} src={MENU_ICON} alt="Menu" />
         <img className={style.call_image} src={PHONE_ICON} alt="" />
         <p className={style.call_number}>8-345-123-34-45</p>
       </a>

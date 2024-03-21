@@ -1,10 +1,11 @@
-import { useEffect, useState, React } from 'react';
+import { useEffect, useState } from 'react';
 import style from './hero.module.scss';
 import MENTOR from '../../assets/img/mentor2.png';
 import VECTOR from '../../assets/icons/vector.svg';
 import VECTOR_BLUE from '../../assets/icons/vector_blue.svg';
+import { Button } from '../button/button';
 
-export const Hero = () => {
+export const Hero = ({setActiveModal}) => {
   const [amount, setAmount] = useState();
   const [dateSum, setDateSum] = useState();
 
@@ -34,18 +35,9 @@ export const Hero = () => {
           реальностью, ваш успех зависит от ваших действий
         </p>
         <div className={style.buttons}>
-          <button className={`${style.btn} ${style.reg_btn} `}>
-            <span className={style.btn_name}>Записаться на консультацию</span>
-            <span className={style.vector}>
-              <img src={VECTOR_BLUE} alt="vector" />
-            </span>
-          </button>
-          <button className={`${style.btn} ${style.free_btn} `}>
-            <span className={style.btn_name}>Бесплатная консультация</span>
-            <span className={style.vector}>
-              <img src={VECTOR} alt="vector" />
-            </span>
-          </button>
+          <Button action={setActiveModal} text="Записаться на консультацию" bg="white" />
+          <Button action={setActiveModal} text="Бесплатная консультация" bg="transp" />
+         
         </div>
         <div className={style.info}>
           <div>

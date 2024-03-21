@@ -1,0 +1,96 @@
+.hero {
+    height: 100%;
+    display: flex;
+    max-width: 1320px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.main_section {
+    z-index: 3;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+    .title {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .description {
+        color: rgba(255, 255, 255, 0.5);
+        border-left: 1px solid white;
+        padding-left: 10px;
+        max-width: 200px;
+    }
+
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+.reg_btn {
+    background-color: white;
+    color: rgba(7, 48, 93, 1);
+    border: 1px solid white;
+
+    .vector {
+        border-left: 1px solid rgba(7, 48, 93, 1);
+
+    }
+}
+
+.free_btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+
+    .vector {
+        border-left: 1px solid white;
+
+    }
+}
+
+.info {
+    display: flex;
+    max-width: 622px;
+    justify-content: space-between;
+    margin-top: 70px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-left: 1px solid white;
+        padding-left: 10px;
+
+        span {
+
+            width: 180px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8rem;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.mentor_img {
+    position: absolute;
+    bottom: 0;
+    right: -150px;
+    max-width: 525px;
+    max-height: 646px;
+
+}

@@ -1,0 +1,50 @@
+.btn {
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    height: 30px;
+    font-size: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+
+    .btn_name {
+        padding: 0 5px;
+        text-wrap: nowrap;
+    }
+
+    .vector {
+
+        height: 30px;
+        position: relative;
+
+        img {
+            position: absolute;
+            right: 3px;
+            bottom: 4px;
+        }
+    }
+}
+
+.reg_btn {
+    background-color: white;
+    color: rgba(7, 48, 93, 1);
+    border: 1px solid white;
+
+    .vector {
+        border-left: 1px solid rgba(7, 48, 93, 1);
+
+    }
+}
+
+.free_btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+
+    .vector {
+        border-left: 1px solid white;
+
+    }
+}
+
