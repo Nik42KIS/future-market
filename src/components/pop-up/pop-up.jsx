@@ -31,6 +31,7 @@ export const PopUp = ({ activeModal, setActiveModal }) => {
             <input
               required
               minLength={3}
+              maxLength={15}
               className={style.input}
               placeholder="ИМЯ"
               name="name"
@@ -39,11 +40,12 @@ export const PopUp = ({ activeModal, setActiveModal }) => {
             <input
               required
               minLength={5}
+              maxLength={20}
               className={style.input}
               placeholder="ТЕЛЕФОН"
               name="phone"
               type="tel"
-              pattern="^[\d+\-]+$"
+              pattern="^ *\d+(\+\d+)?(-){0,3}( ?\(\d+\))?( ?\(\d+\))? *$"
             />
             <div className={style.check_wrap}>
               <Checkbox />

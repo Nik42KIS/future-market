@@ -2,11 +2,12 @@
     font-size: 1rem;
     display: inline-block;
     position: relative;
-    padding-left: 25px;
+    padding-left: 35px;
     cursor: pointer;
     display: flex;
     align-items: center;
-
+    width: 70px;
+    height: 70px;
 }
 
 .checkboxContainer input {
@@ -49,10 +50,4 @@
     border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
-}
-
-.check_wrap {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 80px;
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import style from './header.module.scss';
-import PHONE_ICON from '../../assets/icons/phone_icon.png';
 import { Logo } from '../logo/logo';
+
+import PHONE_ICON from '../../assets/icons/phone_icon.png';
 import MENU_ICON from '../../assets/icons/menu.png';
 
 export const Header = () => {

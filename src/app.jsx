@@ -10,11 +10,9 @@ import { HeroMobile } from './mobile-version/hero/hero';
 
 export function App() {
   const isMobile = useMediaQuery({
-    query: '(max-width: 500px)',
+    query: '(max-width: 600px)',
   });
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 501px)',
-  });
+
   const [activeModal, setActiveModal] = useState(false);
   return (
     <>
@@ -24,13 +22,13 @@ export function App() {
           <PopUp activeModal={activeModal} setActiveModal={setActiveModal} />
           <HeroMobile setActiveModal={setActiveModal} />
         </div>
-      )
-      : <div className={style.container}>
-        <Header />
-        <PopUp activeModal={activeModal} setActiveModal={setActiveModal} />
-        <Hero setActiveModal={setActiveModal} />
-      </div>
-}
+      ) : (
+        <div className={style.container}>
+          <Header />
+          <PopUp activeModal={activeModal} setActiveModal={setActiveModal} />
+          <Hero setActiveModal={setActiveModal} />
+        </div>
+      )}
     </>
   );
 }

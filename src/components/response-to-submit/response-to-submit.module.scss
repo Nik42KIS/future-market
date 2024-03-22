@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    // gap: 80px;
     text-align: center;
     font-weight: 600;
 
@@ -19,7 +18,22 @@
     }
 
     span {
-        // margin-top: 40px;
+        display: flex;
+        align-items: center;
         align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .wrap {
+        .feedback {
+            font-size: 2.8rem;
+
+        }
+
+        .info {
+            font-size: 2rem;
+
+        }
     }
 }

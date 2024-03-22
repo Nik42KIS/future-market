@@ -1,8 +1,8 @@
 .btn {
     display: flex;
-    width: 160px;
+    width: 200px;
     justify-content: space-between;
-    height: 30px;
+    height: 40px;
     font-size: .8rem;
     font-weight: 600;
     cursor: pointer;
@@ -15,7 +15,8 @@
 
     .vector {
 
-        height: 30px;
+        height: 40px;
+        width: 40px;
         position: relative;
 
         img {

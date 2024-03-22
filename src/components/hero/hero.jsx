@@ -1,28 +1,15 @@
 import { useEffect, useState } from 'react';
 import style from './hero.module.scss';
 import MENTOR from '../../assets/img/mentor2.png';
-import VECTOR from '../../assets/icons/vector.svg';
-import VECTOR_BLUE from '../../assets/icons/vector_blue.svg';
 import { Button } from '../button/button';
+import { getData, getSumOfDate } from '../../functions/functions';
 
 export const Hero = ({setActiveModal}) => {
   const [amount, setAmount] = useState();
   const [dateSum, setDateSum] = useState();
 
   useEffect(() => {
-    fetch('https://www.cbr-xml-daily.ru/daily_json.js')
-      .then((res) => res.json())
-      .then((res) => setAmount(Math.floor(res.Valute.GBP.Value)));
-
-    function getSumOfDate() {
-      const date = new Date();
-      const [month, day, year] = [date.getMonth() + 1, date.getDate(), date.getFullYear()];
-      const sum = month + '' + day + year;
-      const result = sum.split('').reduce((total, current) => {
-        return Number(total) + Number(current);
-      }, 0);
-      return result;
-    }
+    getData().then(res => setAmount(Math.floor(res.Valute.GBP.Value)))
     setDateSum(getSumOfDate());
   }, []);
 
